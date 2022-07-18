@@ -1,8 +1,8 @@
-import { useState, react } from 'react';
-import { Box, Paper, Grid, Typography, Card, CardActionArea, CardMedia, CardContent, FormControl, InputLabel, Input, FormHelperText, Button, Stack, TextField } from '@mui/material';
+import { useState } from 'react';
+import { Box, Paper, Typography, Button, Stack } from '@mui/material';
 import { Link } from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';
-import { theme } from './MyColorsh.js';
+import { theme } from '../MyColorsh.js';
 import { FormLogin } from './components/FormLogin';
 
 export default function Login(){
@@ -10,15 +10,15 @@ export default function Login(){
   const [userData, setUserData] = useState({email:{value:'', error:false, helpertext:''},
                                             password:{value:'', error:false, helpertext:''}})
 
-  function handleChangeUsername(e){
-    //Actualización de estado
-    setUserData({...userData, username:e.target.value});
-  }
-
-  function handleChangePassword(e){
-    //Actualización de estado
-    setUserData({...userData, password:e.target.value});
-  }
+  // function handleChangeUsername(e){
+  //   //Actualización de estado
+  //   setUserData({...userData, username:e.target.value});
+  // }
+  //
+  // function handleChangePassword(e){
+  //   //Actualización de estado
+  //   setUserData({...userData, password:e.target.value});
+  // }
 
   function handleSubmit(){
     //
